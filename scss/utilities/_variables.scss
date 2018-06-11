@@ -1,0 +1,77 @@
+//----------------------
+// FONTS
+//----------------------
+
+//font-stacks
+
+$font-url-google : 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700';
+$font-primary   :   'IBM Plex Sans', sans-serif;
+$font-secondary-sans : 'Helvetica, Arial, sans-serif';
+
+//font color palettes
+
+$base    : #808080;
+$base-dark: darken($base, 25%);             
+$base-light: lighten($base, 25%);
+
+// font weight
+
+$font-weight-light: 300;
+$font-weight-reg:   400;
+$font-weight-bold:  700;
+
+// font-size
+
+$font-size-base :   16px;
+$font-size-large:   24px;
+
+
+//----------------------
+//BREAKPOINTS
+//----------------------
+
+$brkpoint-sm    :   1px;
+$brkpoint-md    :   768px;
+$brkpoint-lg    :   1024px;
+
+
+
+
+//----------------------
+//COLORS 
+//----------------------
+
+// font, btn
+
+$gray           :   #808080;
+$viking         :   #58e1c1;
+$malibu         :   #51ddfc;
+
+
+//btn
+
+$emerald        :   #63cc82;
+$sunglo         :   #e4757a;
+$coral          :   #fd7856;
+$purple-mountains-majesty : #927BC1;
+
+// grid-colors
+
+$riptide        :   #80e8d1;
+$shakespear     :   #3fabca;
+$anakiwa        :   #7ee6fd;
+$french-lilak   :   #deb2ee;
+$vista-blue     :   #88d9a0;
+$sea-pink       :   #ec9fa3;
+$vivid-tangerine:   #fd9f85;
+
+$color-primary  :   $viking;
+$color-secondary:   $malibu;
+
+// grid 
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-count-max-width: 1040px;
+

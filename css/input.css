@@ -303,4 +303,12 @@ template {
 p {
   text-align: left; }
 
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.nav {
+  display: block; }
+
 /*# sourceMappingURL=input.css.map */
