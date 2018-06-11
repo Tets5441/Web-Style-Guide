@@ -1,3 +1,25 @@
 .nav {
     display: block;
+    a {
+        text-decoration: none;
+        padding: 1.25em 110px;
+        color: $base;
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+
+.nav__item {
+    font-size: $font-size-base;
+    color: $base;
+    width: 100%;
+    padding: 1.25em 0;
+    margin: auto;
+    border-radius: $border-rad-base;
+    &:hover {
+        background: $viking;
+        color: $white;
+    }
 }

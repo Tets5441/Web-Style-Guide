@@ -1,3 +1,5 @@
 .grid__row {
     @include flexbox($dir: column, $just: space-between);
+    text-align: center;
 }
+
