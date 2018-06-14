@@ -4,7 +4,7 @@
 
 //font-stacks
 
-$font-url-google : 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700';
+$font-url-google : 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700';
 $font-primary   :   'IBM Plex Sans', sans-serif;
 $font-secondary-sans : 'Helvetica, Arial, sans-serif';
 
@@ -16,15 +16,17 @@ $base-light: lighten($base, 25%);
 
 // font weight
 
+$font-weight-thin:  100;
+$font-weight-extra-light:   200;
 $font-weight-light: 300;
 $font-weight-reg:   400;
 $font-weight-bold:  700;
 
 // font-size
 
-$font-size-small:   16px;
+$font-size-sm:   16px;
 $font-size-base :   20px;
-$font-size-large:   24px;
+$font-size-lg:   em(26.5px);
 
 
 //----------------------
@@ -79,5 +81,5 @@ $g-count-max-width: 1040px;
 
 // borders 
 
-$border-rad-base    :   0.5em;
+$border-rad-base    :   em(5px);
 $border-rad-round   :   50%;

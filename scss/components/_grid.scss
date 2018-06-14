@@ -3,3 +3,13 @@
     text-align: center;
 }
 
+.grid__col--9 {
+    padding-bottom: 60px;
+}
+
+.grid__col--12 {
+    & p {
+        padding-bottom: 80px;
+    }
+}
+

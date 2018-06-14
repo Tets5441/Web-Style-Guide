@@ -54,8 +54,16 @@ $just: null){
   justify-content: $just;
 }
 
-
-
+@mixin border-base (
+    $style: solid,
+    $width: null,
+    $color: $color-primary,
+    $rad: null) {
+border-style: $style;
+border-width: $width;
+border-color: $color;
+border-radius: $rad;
+}
 
 
 
