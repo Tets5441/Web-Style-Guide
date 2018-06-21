@@ -6,3 +6,13 @@
 .img--avatar {
     margin: 20px auto;
 }
+
+.img--frame {
+    @include border-base (
+    $style: solid,
+    $width: em(1px),
+    $color: $silver,
+    $rad: null);
+    padding: em(15px);
+    max-width: 100%;
+}

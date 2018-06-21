@@ -54,6 +54,10 @@ $just: null){
   justify-content: $just;
 }
 
+//----------------------
+// BORDER 
+//----------------------
+
 @mixin border-base (
     $style: solid,
     $width: null,
@@ -66,8 +70,13 @@ border-radius: $rad;
 }
 
 
+//----------------------
+// FONTS
+//----------------------
 
-
+//----------------------
+// GRID ITEMS
+//----------------------
 
 
 

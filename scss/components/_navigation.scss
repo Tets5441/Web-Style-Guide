@@ -2,7 +2,7 @@
     display: block;
     a {
         text-decoration: none;
-        padding: 1.25em 110px;
+        padding: 1em em(110px);
         color: $base;
         &:hover {
             color: $white;
@@ -15,7 +15,7 @@
     font-size: $font-size-base;
     color: $base;
     width: 100%;
-    padding: 1.25em 0;
+    padding: 1em 0;
     margin: auto;
     border-radius: $border-rad-base;
     &:hover {

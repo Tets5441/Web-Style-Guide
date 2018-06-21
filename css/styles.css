@@ -302,7 +302,8 @@ template {
 
 .container {
   max-width: 85%;
-  margin: auto; }
+  margin: auto;
+  font-size: 18px; }
 
 p {
   text-align: left; }
@@ -311,6 +312,34 @@ ul {
   list-style: none;
   padding-left: 0;
   margin-top: 40px; }
+
+.btn--default {
+  background: #51ddfc; }
+
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+  border-style: solid;
+  border-width: 0;
+  border-color: #58e1c1;
+  border-radius: 0.2777777778em;
+  color: #fff;
+  padding: 0.6666666667em 0.3888888889em;
+  margin: 0.7777777778em 0; }
+
+.btn--success {
+  background: #63cc82; }
+
+.btn--error {
+  background: #e4757a; }
+
+.btn--warning {
+  background: #fd7856; }
+
+.btn--info {
+  background: #927BC1; }
 
 .form {
   display: flex;
@@ -324,21 +353,73 @@ ul {
 
 .form__input {
   border-style: solid;
-  border-width: 0 0 0.3em 0;
+  border-width: 0 0 0.3333333333em 0;
   border-color: #58e1c1;
-  padding: 10px 0; }
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px; }
 
 .grid__row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  margin: 2.2222222222em 0; }
 
 .grid__col--9 {
   padding-bottom: 60px; }
 
 .grid__col--12 p {
-  padding-bottom: 80px; }
+  padding-bottom: 60px; }
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.grid__col--12.theme__colors {
+  background-color: #80e8d1;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
+.grid__col--6.theme__colors {
+  background-color: #3fabca;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
+.grid__col--4.theme__colors {
+  background-color: #7ee6fd;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
+.grid__col--3.theme__colors {
+  background-color: #deb2ee;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
+.grid__col--5.theme__colors {
+  background-color: #88d9a0;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
+.grid__col--7.theme__colors {
+  background-color: #ec9fa3;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
+.grid__col--8.theme__colors {
+  background-color: #fd9f85;
+  text-align: left;
+  padding: 0.6666666667em 0 0.6666666667em 0.2777777778em;
+  border-radius: 0.2777777778em;
+  margin: 0.2777777778em 0; }
 
 .img--logo {
   align-self: center;
@@ -347,22 +428,29 @@ ul {
 .img--avatar {
   margin: 20px auto; }
 
+.img--frame {
+  border-style: solid;
+  border-width: 0.0555555556em;
+  border-color: #C0C0C0;
+  padding: 0.8333333333em;
+  max-width: 100%; }
+
 .nav {
   display: block; }
   .nav a {
     text-decoration: none;
-    padding: 1.25em 110px;
+    padding: 1em 6.1111111111em;
     color: #808080; }
     .nav a:hover {
       color: #fff; }
 
 .nav__item {
-  font-size: 20px;
+  font-size: 18px;
   color: #808080;
   width: 100%;
-  padding: 1.25em 0;
+  padding: 1em 0;
   margin: auto;
-  border-radius: 0.25em; }
+  border-radius: 0.2777777778em; }
   .nav__item:hover {
     background: #58e1c1;
     color: #fff; }
@@ -373,7 +461,7 @@ ul {
 .headline--secondary {
   text-align: left;
   font-weight: 100;
-  padding-left: 10px; }
+  padding: 20px 0 0 10px; }
 
 .headline--primary {
   text-align: left;
@@ -383,7 +471,8 @@ ul {
 
 .container {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
   color: #808080; }
 
 .link {
@@ -392,13 +481,14 @@ ul {
 
 .blockquote {
   border-style: solid;
-  border-width: 0 0 0 0.4em;
+  border-width: 0 0 0 0.4444444444em;
   border-color: #58e1c1;
-  border-radius: 0.25em;
+  border-radius: 0.2777777778em;
   text-align: left;
-  font-size: 1.325em;
-  margin-left: 0.5em;
-  padding-left: 0.75em;
-  border-radius: 0.25em; }
+  font-size: 1.43em;
+  font-style: italic;
+  margin-left: 0.5555555556em;
+  padding-left: 0.8333333333em;
+  border-radius: 0.2777777778em; }
 
 /*# sourceMappingURL=styles.css.map */

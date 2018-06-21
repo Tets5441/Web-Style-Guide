@@ -1,0 +1,43 @@
+
+//    .btn--success
+ //   .btn--error
+ //   .btn--warning
+//    .btn--info
+//    .theme__colors
+
+.btn--default {   
+    background: $color-secondary;   
+}
+
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+    @include border-base (
+        $width: 0,
+        $rad: em(5px)
+    );
+    color: $white;
+    padding: em(12px) em(7px);
+    margin: em(14px) 0;
+}
+
+.btn--success {
+    background: $emerald;
+}
+
+.btn--error {
+    background: $sunglo;
+}
+
+.btn--warning {
+    background: $coral;
+}
+
+.btn--info {
+    background: $purple-mountains-majesty;
+}
+
+
+
