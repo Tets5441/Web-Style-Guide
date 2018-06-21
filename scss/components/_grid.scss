@@ -2,14 +2,24 @@
     @include flexbox($dir: column, $just: space-between);
     text-align: center;
     margin: em(40px) 0;
+    @include mq(medium) {
+        @include flexbox($dir: row);
     }
-
+}
 
 .grid__col--9 {
     padding-bottom: 60px;
+    @include mq(medium) {
+        padding: 0 20px 0 0;
+    }
 }
 
-
+.grid__col--9 ul {
+@include mq(medium) {
+    @include flexbox($dir: row);
+    vertical-align: middle;
+    }
+}       
 
 .grid__col--12 {
     & p {
@@ -33,7 +43,6 @@
     }
     }
 
-// responsive navigation
 
 
 

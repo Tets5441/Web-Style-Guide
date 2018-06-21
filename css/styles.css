@@ -365,9 +365,22 @@ ul {
   justify-content: space-between;
   text-align: center;
   margin: 2.2222222222em 0; }
+  @media (min-width: 769px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row; } }
 
 .grid__col--9 {
   padding-bottom: 60px; }
+  @media (min-width: 769px) {
+    .grid__col--9 {
+      padding: 0 20px 0 0; } }
+
+@media (min-width: 769px) {
+  .grid__col--9 ul {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle; } }
 
 .grid__col--12 p {
   padding-bottom: 60px; }
@@ -424,6 +437,10 @@ ul {
 .img--logo {
   align-self: center;
   padding-top: 40px; }
+  @media (min-width: 769px) {
+    .img--logo {
+      padding: 0 0 0 20px;
+      margin-top: 1.3888888889em; } }
 
 .img--avatar {
   margin: 20px auto; }
@@ -443,6 +460,9 @@ ul {
     color: #808080; }
     .nav a:hover {
       color: #fff; }
+    @media (min-width: 769px) {
+      .nav a {
+        padding: 1em 0.5555555556em; } }
 
 .nav__item {
   font-size: 18px;

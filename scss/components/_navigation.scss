@@ -7,6 +7,9 @@
         &:hover {
             color: $white;
         }
+        @include mq(medium) {
+            padding: 1em em(10px);
+        }
     }
 }
 

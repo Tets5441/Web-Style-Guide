@@ -1,6 +1,10 @@
 .img--logo {
     align-self: center;
     padding-top: 40px;
+    @include mq(medium) {
+        padding: 0 0 0 20px;
+        margin-top: em(25px);
+    }
 }
 
 .img--avatar {
