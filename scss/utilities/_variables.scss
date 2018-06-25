@@ -35,7 +35,7 @@ $font-size-lg:   1.43em;
 
 $brkpoint-sm    :   1px;
 $brkpoint-md    :   768px;
-$brkpoint-lg    :   1024px;
+$brkpoint-lg    :   1399px;
 
 
 
@@ -60,6 +60,24 @@ $sunglo         :   #e4757a;
 $coral          :   #fd7856;
 $purple-mountains-majesty : #927BC1;
 
+
+$color-primary  :   $viking;
+$color-secondary:   $malibu;
+
+// borders 
+
+$border-rad-base    :   em(5px);
+$border-rad-round   :   50%;
+
+//----------------------
+// GRID
+//----------------------
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-count-max-w: 1040px;
+
 // grid-colors
 
 $riptide        :   #80e8d1;
@@ -81,19 +99,3 @@ $grid-colors: (
     7   :   $sea-pink,
     8   :   $vivid-tangerine
 );
-
-
-$color-primary  :   $viking;
-$color-secondary:   $malibu;
-
-// grid 
-
-$g-col-width: 65px;
-$g-gutter-width: 20px;
-$g-col-count: 12;
-$g-count-max-width: 1040px;
-
-// borders 
-
-$border-rad-base    :   em(5px);
-$border-rad-round   :   50%;

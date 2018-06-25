@@ -21,6 +21,9 @@
     color: $white;
     padding: em(12px) em(7px);
     margin: em(14px) 0;
+    @include mq(large) {
+        width: em(180px);
+    }
 }
 
 .btn--success {
@@ -38,6 +41,7 @@
 .btn--info {
     background: $purple-mountains-majesty;
 }
+
 
 
 

@@ -4,6 +4,10 @@
         $wrap: wrap,
         $just: space-between);
         padding-top: 60px;
+        @include mq(large) {
+            width: em(400px);
+            padding-top: 0;
+        }
 }
 
 .form__label--hidden {
@@ -17,5 +21,9 @@
         $color: $color-primary);
     padding: 10px 0;
     font-size: $font-size-sm;
-    margin-bottom: 30px;
+    margin-bottom: em(30px);
+    @include mq(large) {
+        margin: 0 em(25px) em(30px);
+        max-width: 350px;
+    }
 }

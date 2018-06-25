@@ -1,3 +1,22 @@
 @function em($target, $context: $font-size-base) {
     @return ($target / $context) * 1em;
 }
+
+// set context width for grid
+
+@function g-context($g-col-width, $g-col-count, $g-gutter-width) {
+
+    $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count -1));
+    @return $g-context;
+}
+
+@for $i from 1 through $g-col-count {
+  
+$context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+  
+  // Column modifier classes
+   .grid__col--#{$i} {
+     width: percentage($target / $context);
+   }
+  }
