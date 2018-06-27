@@ -1,3 +1,4 @@
+
 .grid__row {
     @include flexbox($dir: column, $just: space-between);
     text-align: center;
@@ -7,28 +8,12 @@
     }
 }
 
-.grid__col--3 {
-    flex-basis: 25%;
-}
-
-.grid__col--4 {
-    flex-basis: 33%;
-}
-
-.grid__col--5 {
-    flex-basis: 33%;
-}
-
 .grid__col--6 {
     @include mq(large) {
         padding: 0 em(200px) 0 em(60px);
-        flex-basis: 50%;
     }
 }
 
-.grid__col--7 {
-    flex-basis: 67%;
-}
 
 .grid__col--7.theme__colors.centered {
     align-self: center;
@@ -38,7 +23,6 @@
 .grid__col--8 {
     @include mq(large) {
         max-width: 70%;
-        flex-basis: 67%;
     }
 }
 
@@ -62,7 +46,7 @@
         padding-bottom: 60px;
     }
     @include mq(large) {
-        @include flexbox ($dir: row);
+        @include flexbox ($dir: row, $just: space-between);
         width: 100%;
         padding: 0 em(40px);
     }
