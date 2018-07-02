@@ -1,11 +1,11 @@
 .headline--secondary {
-    text-align: left;
+    @extend %headlines;
     font-weight: $font-weight-thin;
     padding: 20px 0 0 10px;
 }
 
 .headline--primary {
-    text-align: left;
+    @extend %headlines;
     font-weight: $font-weight-bold;
     color: $color-primary;
     padding-left: 20px; 
@@ -19,7 +19,7 @@
 }
 
 .link {
-    text-decoration: none;
+    @extend %links;
     color: $color-secondary;
 }
 

@@ -1,2 +1,35 @@
 // create placeholders for Links - Images -  Headlines - Nav items
 
+%links {
+    text-decoration: none;
+}
+
+%images {
+        margin: 20px auto;
+        vertical-align: middle;
+}
+
+%headlines {
+    text-align: left;
+}
+
+%nav {
+    font-size: $font-size-base;
+    color: $base;
+    width: 100%;
+    padding: 1em 0;
+    margin: auto;
+    border-radius: $border-rad-base;
+    &:hover {
+        background: $color-primary;
+        color: $white;
+    }
+    &:active {
+        background-color: $color-primary;
+        color: $white;
+      }
+    @include mq(large) {
+        min-width: 115px;
+    }
+}
+

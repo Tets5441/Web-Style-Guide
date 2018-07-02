@@ -8,13 +8,11 @@
 }
 
 .img--avatar {
-    margin: 20px auto;
-    @include mq(large) {
-        
-    }
+    @extend %images;
 }
 
 .img--frame {
+    @extend %images;
     @include border-base (
     $style: solid,
     $width: em(1px),
@@ -23,4 +21,6 @@
     padding: em(15px);
     max-width: 100%;
 }
+
+
 

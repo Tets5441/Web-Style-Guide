@@ -5,8 +5,9 @@
 //    .btn--info
 //    .theme__colors
 
-.btn--default {   
+.btn--default.theme__colors {   
     background: $color-secondary;   
+    max-width: 100%;
 }
 
 .btn--default,
@@ -21,8 +22,10 @@
     color: $white;
     padding: em(12px) em(7px);
     margin: em(14px) 0;
-    @include mq(large) {
-        width: em(180px);
+    @include mq(medium) {
+        display: flex;
+        flex: 1 10%;
+        margin: 20px;
     }
 }
 

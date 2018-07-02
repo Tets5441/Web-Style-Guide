@@ -1,7 +1,11 @@
+
 .nav {
     display: block;
+    &__item {
+        @extend %nav;
+    }
     a {
-        text-decoration: none;
+        @extend %links;
         padding: 1em em(110px);
         color: $base;
         &:hover {
@@ -13,27 +17,9 @@
     }
 }
 
-
-.nav__item {
-    font-size: $font-size-base;
-    color: $base;
-    width: 100%;
-    padding: 1em 0;
-    margin: auto;
-    border-radius: $border-rad-base;
-    &:hover {
-        background: $color-primary;
-        color: $white;
-    }
-    &:active {
-        background-color: $color-primary;
-        color: $white;
-      }
-}
-
 ul {
     @include mq(medium) {
-    max-width: 50%;
     float: right;
+    clear: right;
     }
 }
