@@ -476,6 +476,9 @@ ul {
 
 .grid__col--9 {
   padding-bottom: 60px; }
+  @media (min-width: 769px) {
+    .grid__col--9 {
+      max-width: 22.2222222222em; } }
   @media (min-width: 1400px) {
     .grid__col--9 {
       padding: 0 20px 0 0;
@@ -572,7 +575,6 @@ ul {
     .img--logo {
       padding: 0 0 0 20px;
       margin-top: 1.3888888889em; } }
-
 .img--frame {
   border-style: solid;
   border-width: 0.0555555556em;
@@ -590,11 +592,10 @@ ul {
     @media (min-width: 769px) {
       .nav a {
         padding: 1em 0.5555555556em; } }
-
-@media (min-width: 769px) {
-  ul {
-    float: right;
-    clear: right; } }
+  @media (min-width: 769px) {
+    .nav ul {
+      float: right;
+      clear: right; } }
 
 .headline--secondary {
   font-weight: 100;

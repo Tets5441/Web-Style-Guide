@@ -1,26 +1,27 @@
-.img--logo {
-    align-self: center;
-    padding-top: 40px;
-    @include mq(medium) {
-        padding: 0 0 0 20px;
-        margin-top: em(25px);
+.img {
+    &--logo {
+        align-self: center;
+        padding-top: 40px;
+        @include mq(medium) {
+            padding: 0 0 0 20px;
+            margin-top: em(25px);
+        }
+    }
+    
+    &--avatar {
+        @extend %images;
+    }
+    
+    &--frame {
+        @extend %images;
+        @include border-base (
+        $style: solid,
+        $width: em(1px),
+        $color: $silver,
+        $rad: null);
+        padding: em(15px);
+        max-width: 100%;
     }
 }
-
-.img--avatar {
-    @extend %images;
-}
-
-.img--frame {
-    @extend %images;
-    @include border-base (
-    $style: solid,
-    $width: em(1px),
-    $color: $silver,
-    $rad: null);
-    padding: em(15px);
-    max-width: 100%;
-}
-
 
 

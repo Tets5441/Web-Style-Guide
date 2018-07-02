@@ -15,11 +15,11 @@
             padding: 1em em(10px);
         }
     }
-}
-
-ul {
-    @include mq(medium) {
-    float: right;
-    clear: right;
+    ul {
+        @include mq(medium) {
+        float: right;
+        clear: right;
+        }
     }
 }
+

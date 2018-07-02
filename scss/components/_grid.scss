@@ -37,6 +37,7 @@
 .grid__col--9 {
     padding-bottom: 60px;
     @include mq(medium) {
+        max-width: em(400px);
     }
     @include mq(large) {
         padding: 0 20px 0 0;
